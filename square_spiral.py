@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from turtle import *
 
 speed(5)

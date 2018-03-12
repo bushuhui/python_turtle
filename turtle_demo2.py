@@ -1,6 +1,7 @@
 from turtle import *
 import time
 
+
 def switchpen():
     if isdown():
         pu()

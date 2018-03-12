@@ -15,6 +15,9 @@ https://github.com/ryanbenedetti/turtle-graphics-for-kids
 
 Python Projects for Kids
 
+Intro to Programming - Python
+http://python-intro.readthedocs.io/en/latest/index.html
+
 Python Turtle Programming for Kids
 https://www.gordonchoi.com/python-turtle-programming-for-kids/
 
