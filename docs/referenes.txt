@@ -51,6 +51,7 @@ http://zulko.github.io/blog/2014/09/20/vector-animations-with-python/
 
 ## Libarys:
 Scientific Graphics and GUI Library for Python: PyQtGraph
+
 Interactive scientific visualization: VisPy
 
 Simple Vector Graphics for Python
@@ -62,6 +63,7 @@ https://github.com/JulienLeonard/PVG
 
 ## Book:
 Python for Kids: A Playful Introduction To Programming
+
 Python Projects for Kids
 
 
