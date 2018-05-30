@@ -38,9 +38,12 @@ https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simpl
 Learn Python Turtle Graphics and L-Systems
 https://github.com/thomasmarsh/python-turtle
 
-
 How to Think Like a Computer Scientist
 http://openbookproject.net/thinkcs/python/english3e/index.html
+
+Intro to Programming - Python
+http://python-intro.readthedocs.io/en/latest/index.html
+
 
 Vector Animations With Python
 http://zulko.github.io/blog/2014/09/20/vector-animations-with-python/
@@ -63,9 +66,7 @@ Python Projects for Kids
 
 
 ## Resources:
-
 Images of turtle
 https://cn.bing.com/images/search?q=Python%20Turtle&&form=IDIVXX
-
 
 

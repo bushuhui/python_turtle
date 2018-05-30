@@ -7,6 +7,7 @@ def demo1():
     up()
     backward(100)
     down()
+
     # draw 3 squares; the last filled
     width(3)
     for i in range(3):

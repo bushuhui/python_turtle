@@ -1,8 +1,13 @@
+#!/usr/bin/env python
+
+#
+# standard usage for turtle
+#
+
 import turtle
-import time
 
 turtle.bgcolor("black")
-turtle.speed(5)
+turtle.speed(10)
 
 t = turtle.Pen()
 t.pencolor("red")
@@ -12,8 +17,9 @@ t.forward(100)
 t.pencolor("yellow")
 t.forward(100)
 
-t.right(90)
+t.speed(4)
 
+t.right(90)
 t.pencolor("blue")
 t.forward(94)
 t.pencolor("indigo")
@@ -68,3 +74,4 @@ t.forward(100)
 t.pencolor("yellow")
 t.forward(100)
 
+turtle.mainloop()
