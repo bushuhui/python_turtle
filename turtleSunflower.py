@@ -35,8 +35,8 @@ def drawPhyllotacticPattern( t, petalstart, angle = 137.508, size = 2, cspread =
                 # orient the turtle correctly
                 turtle.setheading(n * angle)
                 if n > petalstart-1:
-                        #turtle.color("yellow")
-                        drawPetal(x,y)
+                        turtle.color("yellow")
+                        drawPetal_0(x,y)
                 else: turtle.stamp()
                 
 
@@ -46,7 +46,7 @@ def drawPetal_0( x, y ):
         turtle.down()
         turtle.begin_fill()
         #turtle.fill(True)
-        turtle.pen(outline=1,pencolor="black",fillcolor="green")
+        turtle.pen(outline=1,pencolor="black",fillcolor="yellow")
         turtle.right(20)
         turtle.forward(100)
         turtle.left(40)
