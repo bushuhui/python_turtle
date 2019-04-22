@@ -72,3 +72,14 @@ Images of turtle
 https://cn.bing.com/images/search?q=Python%20Turtle&&form=IDIVXX
 
 
+Python Turtle Graphics - The Complete Guide
+https://coolpythoncodes.com/python-turtle/ 
+
+10分钟轻松学会 Python turtle 绘图
+https://www.cnblogs.com/nowgood/p/turtle.html
+
+## Spirograph
+https://en.wikipedia.org/wiki/Spirograph
+
+Spirograph Patterns http://www.eddaardvark.co.uk/python_patterns/spirograph.html
+Python Turtle Spirograph https://www.101computing.net/python-turtle-spirograph/
