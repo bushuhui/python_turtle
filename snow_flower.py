@@ -28,19 +28,19 @@ def ground():
 
 def snow():
     hideturtle()
-    speed(100)
+    speed(0)
     pensize(2)
-    for i in range(100):
+    for i in range(1000):
         r = random()
         g = random()
         b = random()
         pencolor(r, g, b)
         penup()
         setx(randint(-350, 350))
-        sety(randint(1, 270))
+        sety(randint(-270, 270))
         pendown()
         dens = randint(8, 12)
-        snowsize = randint(10, 14)
+        snowsize = randint(5, 24)
         for j in range(dens):
             forward(snowsize)
             backward(snowsize)
