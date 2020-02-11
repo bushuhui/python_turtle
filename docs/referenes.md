@@ -85,7 +85,12 @@ Spirograph Patterns http://www.eddaardvark.co.uk/python_patterns/spirograph.html
 Python Turtle Spirograph https://www.101computing.net/python-turtle-spirograph/
 
 
-## Save image
+## How to capture screen image
+* https://stackoverflow.com/questions/9886274/how-can-i-convert-canvas-content-to-an-image
+  
+* python screenshot https://github.com/ponty/pyscreenshot
+* https://stackoverflow.com/questions/19964345/how-to-do-a-screenshot-of-a-tkinter-application
+
 * https://stackoverflow.com/questions/4071633/python-turtle-module-saving-an-image
 * https://stackoverflow.com/questions/2846947/get-screenshot-on-windows-with-python
 
