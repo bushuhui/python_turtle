@@ -83,3 +83,13 @@ https://en.wikipedia.org/wiki/Spirograph
 
 Spirograph Patterns http://www.eddaardvark.co.uk/python_patterns/spirograph.html
 Python Turtle Spirograph https://www.101computing.net/python-turtle-spirograph/
+
+
+## Save image
+* https://stackoverflow.com/questions/4071633/python-turtle-module-saving-an-image
+* https://stackoverflow.com/questions/2846947/get-screenshot-on-windows-with-python
+
+shutter:
+```
+shutter --window="Python Turtle Graphics" -o `pwd`/t.png
+```

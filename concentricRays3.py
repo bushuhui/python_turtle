@@ -2,12 +2,11 @@
 
 import random
 import turtle
-import math
 
 # Draws three sets of concentric rays with a sort of spiral galaxy effect.
 # Small step size and multiple nested loops runs quite slowly. Probably not the most efficient code.
 
-def hueGen(hue = 0,val = 1, sat=1):
+def hueGen2(hue = 0, val = 1, sat=1):
     """Generates a 360 degree range of hues
     sat of 1 is full saturation, 0 is B & W.
     val of 1 is full color, 0 is black"""
@@ -15,6 +14,46 @@ def hueGen(hue = 0,val = 1, sat=1):
     val = float(val)
     sat = float(sat)
 
+    if 0 <= hue < 60:
+        r = 1.0
+        g = (hue/59.0) + (1.0-sat)*(59.0-hue)/59.0
+        b = 1.0 - sat
+        hueOut = (r*val, g*val, b*val)
+    elif 60 <= hue < 120:
+        r = ((1.0 - 1.0*(hue-60.0)/59.0) + 1.0*(1.0-sat)*(1.0-(119.0-hue)/59.0))
+        g = 1.0
+        b = 1.0 - sat
+        hueOut = (r*val, g*val, b*val)
+    elif 120 <= hue < 180:
+        r = 1.0 - sat
+        g = 1.0
+        b = (1.0*(hue-120.0)/59.0) + (1.0-sat)*(179.0-hue)/59.0
+        hueOut = (r*val, g*val, b*val)
+    elif 180 <= hue < 240:
+        r = 1.0 - sat
+        g = (1.0-1.0*(hue-180)/59.0) + 1.0*(1-sat)*(1.0 - 1.0*(239-hue)/59.0)
+        b = 1.0
+        hueOut = (r*val, g*val, b*val)
+    elif 240 <= hue < 300:
+        r = (1.0*(hue-240.0)/59.0) + 1.0*(1-sat)*(299.0-hue)/59.0
+        g = 1.0 - sat
+        b = 1.0
+        hueOut = (r*val, g*val, b*val)
+    elif 300 <= hue < 360:
+        r = 1.0
+        g = 1.0 - sat
+        b = (1.0-1.0*(hue-300)/59.0) + 1.0*(1-sat)*(1-1.0*(359-hue)/59.0)
+        hueOut = (r*val, g*val, b*val)
+    elif hue >= 360:
+        hueOut = hueGen(hue % 360, val, sat)
+
+    hueOut_ = [min(255, int(255*hueOut[i])) for i in range(3)]
+    return hueOut_
+
+def hueGen(hue = 0,val = 1, sat=1):
+    """Generates a 360 degree range of hues
+    sat of 1 is full saturation, 0 is B & W.
+    val of 1 is full color, 0 is black"""
     if 0 <= hue < 60:
         r = 1
         g = (hue/59) + (1-sat)*(59-hue)/59
@@ -47,10 +86,7 @@ def hueGen(hue = 0,val = 1, sat=1):
         hueOut = (r*val,g*val,b*val)
     elif hue >= 360:
         hueOut = hueGen(hue % 360, val, sat)
-
-    hueOut_ = [min(255, int(255*hueOut[0])) for i in range(3)]
-    #print(hueOut, hueOut_)
-    return hueOut_
+    return hueOut
 
 def timeTunnel(repeats = 1, zigzag = 10,  stepVar = 1,  curve = 0):
     """
@@ -103,7 +139,11 @@ def timeTunnel(repeats = 1, zigzag = 10,  stepVar = 1,  curve = 0):
 
 turtle.tracer(0, 0)
 wn = turtle.Screen()
-wn.colormode(255)
+
+# default color mode is (0, 1), therefore, use hueGen
+# if set color mode to 255, then use hueGen2
+#wn.colormode(255)
+
 turtle.bgcolor("black")
 alex = turtle.Turtle()
 alex.speed(10)
@@ -111,6 +151,13 @@ alex.pensize(0)
 alex.ht()
 timeTunnel(100,1, 1, .5)
 print("Finished draw")
+
 turtle.update()
+
+saveImage = False
+if saveImage:
+    ts = turtle.getscreen()
+    ts.getcanvas().postscript(file="concentricRay2.eps")
+
 #wn.exitonclick()
 turtle.mainloop()
