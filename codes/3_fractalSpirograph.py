@@ -118,7 +118,7 @@ class SpiroAnimator:
         self.spiros = []
         for i in range(N):
             # generate random parameters
-            rparams = self.genRandomParams()
+            rparams = self.genRandomParams(i)
             # set spiro params
             spiro = Spiro(*rparams)
             self.spiros.append(spiro)
@@ -128,25 +128,33 @@ class SpiroAnimator:
         # restart sprio drawing
 
     def restart(self):
+        i = 0
         for spiro in self.spiros:
             # clear
             spiro.clear()
             # generate random parameters
-            rparams = self.genRandomParams()
+            rparams = self.genRandomParams(i)
             # set spiro params
             spiro.setparams(*rparams)
             # restart drawing
             spiro.restart()
 
+            i = i+1
+
             # generate random parameters
 
-    def genRandomParams(self):
+    def genRandomParams(self, idx):
         width, height = self.width, self.height
         R = random.randint(50, min(width, height) // 2)
         r = random.randint(10, 9 * R // 10)
         l = random.uniform(0.1, 0.9)
-        xc = random.randint(-width // 2, width // 2)
-        yc = random.randint(-height // 2, height // 2)
+
+        xc = -width/4  + (idx%2)*width/2
+        yc = -height/4 + (idx//2)*height/2
+        print(xc, yc)
+        #xc = random.randint(-width // 2, width // 2)
+        #yc = random.randint(-height // 2, height // 2)
+
         col = (random.random(),
                random.random(),
                random.random())

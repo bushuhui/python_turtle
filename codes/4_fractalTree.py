@@ -1,8 +1,11 @@
-# drawtree.py
 # encoding: utf-8
 
 import turtle
 
+"""
+FIXME:
+change stick size dynamicly
+"""
 
 def tree(plist, l, a, f):
     """ plist is list of pens

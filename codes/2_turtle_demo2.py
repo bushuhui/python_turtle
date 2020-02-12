@@ -107,49 +107,7 @@ def demo2():
     tri.onclick(baba, 1)
 
 
-def demo3():
-    tri = getturtle()
-    tri.resizemode("auto")
-    tri.shape("classic")
-    tri.up()
-    tri.goto(300, -200)
-    tri.down()
-
-    turtle = Turtle()
-    turtle.resizemode("auto")
-    turtle.shape("turtle")
-    turtle.reset()
-    turtle.left(90)
-    turtle.speed(0)
-    turtle.up()
-    turtle.goto(280, 40)
-    turtle.lt(30)
-    turtle.down()
-    turtle.speed(6)
-    turtle.color("blue", "orange")
-    turtle.pensize(2)
-    tri.speed(6)
-    setheading(towards(turtle))
-    count = 1
-    while tri.distance(turtle) > 4:
-        turtle.fd(20.20)
-        turtle.lt(3.2)
-
-        tri.setheading(tri.towards(turtle))
-        tri.fd(20.21)
-
-        if count % 20 == 0:
-            pass
-            #turtle.stamp()
-            #tri.stamp()
-            #switchpen()
-        count += 1
-
-    tri.write("CAUGHT! ", font=("Arial", 16, "bold"), align="right")
-    tri.pencolor("black")
-    tri.pencolor("red")
-
 if( __name__ == "__main__" ):
-    demo3()
+    demo2()
     done()
 
