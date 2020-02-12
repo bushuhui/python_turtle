@@ -84,6 +84,7 @@ https://en.wikipedia.org/wiki/Spirograph
 Spirograph Patterns http://www.eddaardvark.co.uk/python_patterns/spirograph.html
 Python Turtle Spirograph https://www.101computing.net/python-turtle-spirograph/
 
+https://www.geeksforgeeks.org/fractal-using-spirograph-python/
 
 ## How to capture screen image
 * https://stackoverflow.com/questions/9886274/how-can-i-convert-canvas-content-to-an-image
