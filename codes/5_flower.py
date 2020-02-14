@@ -5,7 +5,7 @@ import turtle
 
 def draw():
     turtle.ht()
-    
+
     # 设置初始位置  
     turtle.penup()
     turtle.left(90)
