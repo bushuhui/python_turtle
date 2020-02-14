@@ -2,14 +2,21 @@
 import turtle
 import time
 
-# 同时设置pencolor=color1, fillcolor=color2
-turtle.color("red", "yellow")
 
-turtle.begin_fill()
-for _ in range(50):
-    turtle.forward(200)
-    turtle.left(170)
+def draw():
+    # 同时设置pencolor=color1, fillcolor=color2
+    turtle.color("red", "yellow")
 
-turtle.end_fill()
+    turtle.penup()
+    turtle.goto(-100, 0)
+    turtle.pendown()
 
-turtle.mainloop()
+    for _ in range(36):
+        turtle.forward(200)
+        turtle.left(170)
+
+    turtle.ht()
+
+if __name__ == "__main__":
+    draw()
+    turtle.mainloop()

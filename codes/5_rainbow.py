@@ -1,4 +1,5 @@
 # -*- coding:utf-8 –*-
+
 from turtle import *
 
 
@@ -54,20 +55,21 @@ def rainbow():
     penup()
 
 
-def main():
+def draw():
     setup(800, 600, 0, 0)
     bgcolor((0.8, 0.8, 1.0))
     tracer(False)
+
     rainbow()
+
     # 输出文字
     tracer(False)
-    goto(100, -100)
+    goto(100, -140)
     pendown()
     color("red")
     write("彩虹 Rainbow", align="center",
           font=("Script MT Bold", 50, "bold"))
-    tracer(True)
 
 if __name__ == "__main__":
-    main()
+    draw()
     mainloop()

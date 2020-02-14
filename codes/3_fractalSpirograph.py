@@ -31,7 +31,7 @@ class Spiro:
 
         # set parameters
 
-    def setparams(self, xc, yc, col, R, r, l):
+    def setparams(self, xc, yc, col, R, r, l, maxRot=5):
         # spirograph parameters
         self.xc = xc
         self.yc = yc
@@ -41,7 +41,7 @@ class Spiro:
         self.col = col
         # reduce r/R to smallest form by dividing with GCD
         gcdVal = gcd(self.r, self.R)
-        self.nRot = self.r // gcdVal
+        self.nRot = min(maxRot, self.r // gcdVal)
         # get ratio of radii
         self.k = r / float(R)
         # set color
@@ -64,9 +64,8 @@ class Spiro:
         self.t.setpos(self.xc + x, self.yc + y)
         self.t.down()
 
-        # draw the whole thing
-
     def draw(self):
+        # draw the whole thing
         # draw rest of points
         R, k, l = self.R, self.k, self.l
         for i in range(0, 360 * self.nRot + 1, self.step):
@@ -83,37 +82,46 @@ class Spiro:
         # skip if done
         if self.drawingComplete:
             return
+
         # increment angle
         self.a += self.step
+
         # draw step
         R, k, l = self.R, self.k, self.l
+
         # set angle
         a = math.radians(self.a)
         x = self.R * ((1 - k) * math.cos(a) + l * k * math.cos((1 - k) * a / k))
         y = self.R * ((1 - k) * math.sin(a) - l * k * math.sin((1 - k) * a / k))
         self.t.setpos(self.xc + x, self.yc + y)
+
         # check if drawing is complete and set flag
         if self.a >= 360 * self.nRot:
             self.drawingComplete = True
             # done - hide turtle
             self.t.hideturtle()
 
-            # clear everything
 
     def clear(self):
+        # clear everything
         self.t.clear()
 
-    # A class for animating spirographs
 
 
 class SpiroAnimator:
-    # constructor
+    # A class for animating spirographs
+
     def __init__(self, N):
+        # constructor
+        self.finished = False
+
         # timer value in milliseconds
         self.deltaT = 10
+
         # get window dimensions
         self.width = turtle.window_width()
         self.height = turtle.window_height()
+
         # create spiro objects
         self.spiros = []
         for i in range(N):
@@ -122,12 +130,13 @@ class SpiroAnimator:
             # set spiro params
             spiro = Spiro(*rparams)
             self.spiros.append(spiro)
-            # call timer
-        turtle.ontimer(self.update, self.deltaT)
 
-        # restart sprio drawing
+        # call timer
+        #turtle.ontimer(self.update, self.deltaT)
+
 
     def restart(self):
+        # restart sprio drawing
         i = 0
         for spiro in self.spiros:
             # clear
@@ -141,9 +150,9 @@ class SpiroAnimator:
 
             i = i+1
 
-            # generate random parameters
 
     def genRandomParams(self, idx):
+        # generate random parameters
         width, height = self.width, self.height
         R = random.randint(50, min(width, height) // 2)
         r = random.randint(10, 9 * R // 10)
@@ -151,7 +160,6 @@ class SpiroAnimator:
 
         xc = -width/4  + (idx%2)*width/2
         yc = -height/4 + (idx//2)*height/2
-        print(xc, yc)
         #xc = random.randint(-width // 2, width // 2)
         #yc = random.randint(-height // 2, height // 2)
 
@@ -169,13 +177,13 @@ class SpiroAnimator:
             # count completed ones
             if spiro.drawingComplete:
                 nComplete += 1
+
         # if all spiros are complete, restart
         if nComplete == len(self.spiros):
-            self.restart()
-            # call timer
-        turtle.ontimer(self.update, self.deltaT)
+            self.finished = True
 
-        # toggle turtle on/off
+        #turtle.ontimer(self.update, self.deltaT)
+
 
     def toggleTurtles(self):
         for spiro in self.spiros:
@@ -184,10 +192,14 @@ class SpiroAnimator:
             else:
                 spiro.t.showturtle()
 
-            # save spiros to image
-
+    def waitFinished(self):
+        while not self.finished:
+            self.update()
+            #time.sleep(1)
 
 def saveDrawing():
+    # save spiros to image
+
     # hide turtle
     turtle.hideturtle()
     # generate unique file name
@@ -206,7 +218,7 @@ def saveDrawing():
 
 
 # main() function
-def main():
+def draw():
     # use sys.argv if needed
     print('generating spirograph...')
 
@@ -236,7 +248,8 @@ def main():
     turtle.shape('turtle')
 
     # set title
-    turtle.title("Spirographs!")
+    #turtle.title("Spirographs!")
+
     # add key handler for saving images
     turtle.onkey(saveDrawing, "s")
     # start listening
@@ -256,15 +269,19 @@ def main():
     else:
         # create animator object
         spiroAnim = SpiroAnimator(4)
+
         # add key handler to toggle turtle cursor
         turtle.onkey(spiroAnim.toggleTurtles, "t")
         # add key handler to restart animation
         turtle.onkey(spiroAnim.restart, "space")
 
-    # start turtle main loop
-    turtle.mainloop()
+        # wait all spirograph finished
+        spiroAnim.waitFinished()
 
 
 # call main
 if __name__ == '__main__':
-    main()
+    draw()
+
+    # start turtle main loop
+    turtle.mainloop()

@@ -1,6 +1,6 @@
 #bob ross drawing
 
-from turtle import Turtle
+from turtle import Turtle, mainloop
 from random import randint
 
 grass = Turtle()
@@ -46,9 +46,7 @@ def speed():
 
 hexnum = ["1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"]
 
-penup()
-sky.goto(-200,-200)
-pendown()
+
 
 skycol = ['add8e6','b5d8e5','bdd8e4','c5d8e3','cdd8e3','d6d8e2','ded8e1','e6d8e1','eed8e0','f6d8df','ffd9df']
 
@@ -364,30 +362,37 @@ def cutdraw():
     penup()
     cut.speed(9)
     cut.color('white')
-    cut.pensize(200)
-    cut.goto(-345,345)
+    cut.pensize(400)
+    cut.goto(-445,445)
     cut.pendown()
-    cut.goto(345,345)
-    cut.goto(345,-345)
-    cut.goto(-345,-345)
-    cut.goto(-345,345)
+    cut.goto(445,445)
+    cut.goto(445,-445)
+    cut.goto(-445,-445)
+    cut.goto(-445,445)
 
 
-speed() #sets all speeds to fastest
+def draw():
+    penup()
+    sky.goto(-200,-200)
+    pendown()
 
-drawsky()
+    speed() #sets all speeds to fastest
 
-clouddraw()
+    drawsky()
 
-drawmountains()
+    clouddraw()
 
-lakedraw()
+    drawmountains()
 
-lilypads(25)
+    lakedraw()
 
-drawtrees()
+    lilypads(25)
 
-cutdraw() #cuts off the edges
+    drawtrees()
 
-print("\nTa Daaa!")
-input()
+    cutdraw() #cuts off the edges
+
+
+if __name__ == "__main__":
+    draw()
+    mainloop()

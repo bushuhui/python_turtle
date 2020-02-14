@@ -61,6 +61,6 @@ def draw():
     five_star(284)
 
 
-draw()
-# 固定弹出框，画完图像后框不直接消失
-turtle.done()
+if __name__ == "__main__":
+    draw()
+    turtle.mainloop()

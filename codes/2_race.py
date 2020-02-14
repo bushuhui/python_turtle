@@ -25,7 +25,7 @@ def draw():
 
     tri.speed(6)
     tri.setheading(tri.towards(rabbit))
-    count = 1
+
     while tri.distance(rabbit) > 2:
         rabbit.fd(20.20)
         rabbit.lt(3.2)
@@ -33,16 +33,11 @@ def draw():
         tri.setheading(tri.towards(rabbit))
         tri.fd(20.6)
 
-        if count % 20 == 0:
-            pass
-            #rabbit.stamp()
-            #tri.stamp()
-            #switchpen()
-        count += 1
 
     tri.write("CAUGHT! ", font=("Arial", 16, "bold"), align="right")
     tri.pencolor("black")
     tri.pencolor("red")
+
 
 if __name__ == "__main__":
     draw()

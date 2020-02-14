@@ -13,7 +13,7 @@ def ground():
     hideturtle()
     speed(100)
     for i in range(400):
-        pensize(randint(5, 10))
+        pensize(randint(35, 50))
         x = randint(-400, 350)
         y = randint(-280, -1)
         r = -y / 280
@@ -47,14 +47,15 @@ def snow():
             right(360 / dens)
 
 
-def main():
+def draw():
     setup(800, 600, 0, 0)
     tracer(False)
     bgcolor("black")
+
     snow()
     ground()
-    tracer(True)
+
+
+if __name__ == "__main__":
+    draw()
     mainloop()
-
-
-main()

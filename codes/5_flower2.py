@@ -49,7 +49,7 @@ def leaf(t, r, angle, p):
     t.end_fill()
 
 
-def main():
+def draw():
     window = turtle.Screen()  # creat a screen
     window.bgcolor("blue")
 
@@ -73,7 +73,8 @@ def main():
     leaf(lucy, 40, 80, 180)
     lucy.ht()
 
-    window.exitonclick()
 
+if __name__ == "__main__":
+    draw()
+    turtle.mainloop()
 
-main()

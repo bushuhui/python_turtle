@@ -22,6 +22,7 @@ def demo2():
     write("wait a moment...")
     while undobufferentries():
         undo()
+
     reset()
     lt(90)
     colormode(255)
@@ -48,13 +49,13 @@ def demo2():
     pd()
     color("red", "yellow")
     speed(0)
-    fill(1)
+    begin_fill()
     for _ in range(4):
         circle(50, 90)
         rt(90)
         fd(30)
         rt(90)
-    fill(0)
+    end_fill()
     lt(90)
     pu()
     fd(30)
@@ -109,5 +110,5 @@ def demo2():
 
 if( __name__ == "__main__" ):
     demo2()
-    done()
+
 
