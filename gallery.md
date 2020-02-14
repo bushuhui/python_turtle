@@ -1,9 +1,5 @@
-# Pyton Turtle Drawing
+# Turtle Gallery
 
-
-## 1. Gallery
-
-### 1.1 Basic Usage
 code: [0_line](codes/0_line.py)
 ![0_line](images/0_line.png)
 
@@ -13,7 +9,6 @@ code: [0_squre](codes/0_squre.py)
 code: [0_staircase](codes/0_staircase.py)
 ![0_staircase](images/0_staircase.png)
 
-### 1.2 Basic Shapes
 code: [1_basicShapes](codes/1_basicShapes.py)
 ![1_basicShapes](images/1_basicShapes.png)
 
@@ -29,7 +24,6 @@ code: [1_squares](codes/1_squares.py)
 code: [1_sun](codes/1_sun.py)
 ![1_sun](images/1_sun.png)
 
-### 1.3 Repeat Drawing
 code: [2_colorCircles](codes/2_colorCircles.py)
 ![2_colorCircles](images/2_colorCircles.png)
 
@@ -78,8 +72,6 @@ code: [2_sunFlower](codes/2_sunFlower.py)
 code: [2_turtleSpiral](codes/2_turtleSpiral.py)
 ![2_turtleSpiral](images/2_turtleSpiral.png)
 
-
-### 1.4 Spirograph
 code: [3_fractalSpirograph](codes/3_fractalSpirograph.py)
 ![3_fractalSpirograph](images/3_fractalSpirograph.png)
 
@@ -89,8 +81,6 @@ code: [3_spirograph](codes/3_spirograph.py)
 code: [3_spirographHypotrochoid](codes/3_spirographHypotrochoid.py)
 ![3_spirographHypotrochoid](images/3_spirographHypotrochoid.png)
 
-
-### 1.5 Fractal & Math
 code: [4_fractalTree](codes/4_fractalTree.py)
 ![4_fractalTree](images/4_fractalTree.png)
 
@@ -106,8 +96,6 @@ code: [4_leaf](codes/4_leaf.py)
 code: [4_sierpinskiTriangle](codes/4_sierpinskiTriangle.py)
 ![4_sierpinskiTriangle](images/4_sierpinskiTriangle.png)
 
-
-### 1.6 Complex Drawing
 code: [5_colorSnake](codes/5_colorSnake.py)
 ![5_colorSnake](images/5_colorSnake.png)
 
@@ -151,11 +139,3 @@ code: [5_turtleSunflower](codes/5_turtleSunflower.py)
 ![5_turtleSunflower](images/5_turtleSunflower.png)
 
 
-
-
-
-## References
-* https://coolpythoncodes.com/python-turtle/
-* [Creating Turtle Geometry with IPython]https://github.com/gkvoelkl/ipython-turtle-widget
-* [Turtles on a notebook](https://github.com/takluyver/mobilechelonian)
-* 科赫雪花小包裹 https://www.toutiao.com/a6714524859054948877
