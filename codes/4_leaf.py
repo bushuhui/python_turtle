@@ -9,6 +9,7 @@ def draw():
     turtle.speed(1)
     turtle.tracer(2, 0)
     turtle.reset()
+    turtle.ht()
 
     x = np.array([[.5], [.5]])
     p = [0.85, 0.92, 0.99, 1.00]

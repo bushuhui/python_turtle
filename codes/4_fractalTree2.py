@@ -41,6 +41,8 @@ def draw():
     tree_angle = 20  # 树枝分叉角度，我设为20
     draw_smalltree(tree_length, tree_angle)
 
+    tl.ht()
+
 
 if __name__ == '__main__':
     draw()
