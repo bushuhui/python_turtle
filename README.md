@@ -1,7 +1,9 @@
 # Pyton Turtle Drawing
 
+本项目包含了Python Turtle画图的例子程序，从基础的用法到高级的绘图技巧，让初学者能通过充满乐趣的画图来学习Python编程，以及编程思维。
 
-## 1. Gallery
+
+## 1. [Gallery](gallery.md)
 
 ### 1.1 Basic Usage
 code: [0_line](codes/0_line.py)
@@ -151,11 +153,5 @@ code: [5_turtleSunflower](codes/5_turtleSunflower.py)
 ![5_turtleSunflower](images/5_turtleSunflower.png)
 
 
-
-
-
 ## References
-* https://coolpythoncodes.com/python-turtle/
-* [Creating Turtle Geometry with IPython]https://github.com/gkvoelkl/ipython-turtle-widget
-* [Turtles on a notebook](https://github.com/takluyver/mobilechelonian)
-* 科赫雪花小包裹 https://www.toutiao.com/a6714524859054948877
+[References](docs/references.md)
