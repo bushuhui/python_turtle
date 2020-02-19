@@ -98,7 +98,7 @@ class RunScript:
         f.write(mt)
         f.close()
 
-        # close draw window
+        # close drawing window
         turtle.bye()
 
         print("- capture finished!")
@@ -116,7 +116,11 @@ if __name__ == "__main__":
     mtfile = os.path.join(fpath, "gallery.md")
 
     # get code list
-    cl = getScriptList(codePath)
+    if len(sys.argv) > 1:
+        cl = sys.argv[1:]
+    else:
+        cl = getScriptList(codePath)
+
     print("code list: ", cl)
     print("")
 

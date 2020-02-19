@@ -7,6 +7,8 @@
 #
 # March 21, 2013
 # Based on original code in C 1989 using Silicon Graphics Workstations and gl
+#
+# https://fiftyexamples.readthedocs.io/en/latest/life.html
 
 import math
 import turtle

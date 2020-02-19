@@ -1,5 +1,6 @@
-# Turtle Gallery
+# Gallery]
 
+### 1.1 Basic Usage
 code: [0_line](codes/0_line.py)
 ![0_line](images/0_line.png)
 
@@ -9,6 +10,12 @@ code: [0_squre](codes/0_squre.py)
 code: [0_staircase](codes/0_staircase.py)
 ![0_staircase](images/0_staircase.png)
 
+code: [0_turtleStar](codes/0_turtleStar.py)
+![0_turtleStar](images/0_turtleStar.png)
+
+
+
+### 1.2 Basic Shapes
 code: [1_basicShapes](codes/1_basicShapes.py)
 ![1_basicShapes](images/1_basicShapes.png)
 
@@ -24,6 +31,15 @@ code: [1_squares](codes/1_squares.py)
 code: [1_sun](codes/1_sun.py)
 ![1_sun](images/1_sun.png)
 
+code: [1_chessBoard](codes/1_chessBoard.py)
+![1_chessBoard](images/1_chessBoard.png)
+
+code: [1_taiji](codes/1_taiji.py)
+![1_taiji](images/1_taiji.png)
+
+
+
+### 1.3 Repeat Drawing
 code: [2_colorCircles](codes/2_colorCircles.py)
 ![2_colorCircles](images/2_colorCircles.png)
 
@@ -72,6 +88,8 @@ code: [2_sunFlower](codes/2_sunFlower.py)
 code: [2_turtleSpiral](codes/2_turtleSpiral.py)
 ![2_turtleSpiral](images/2_turtleSpiral.png)
 
+
+### 1.4 Spirograph
 code: [3_fractalSpirograph](codes/3_fractalSpirograph.py)
 ![3_fractalSpirograph](images/3_fractalSpirograph.png)
 
@@ -81,6 +99,8 @@ code: [3_spirograph](codes/3_spirograph.py)
 code: [3_spirographHypotrochoid](codes/3_spirographHypotrochoid.py)
 ![3_spirographHypotrochoid](images/3_spirographHypotrochoid.png)
 
+
+### 1.5 Fractal & Math
 code: [4_fractalTree](codes/4_fractalTree.py)
 ![4_fractalTree](images/4_fractalTree.png)
 
@@ -96,6 +116,22 @@ code: [4_leaf](codes/4_leaf.py)
 code: [4_sierpinskiTriangle](codes/4_sierpinskiTriangle.py)
 ![4_sierpinskiTriangle](images/4_sierpinskiTriangle.png)
 
+
+code: [4_cherryFlower](codes/4_cherryFlower.py)
+![4_cherryFlower](images/4_cherryFlower.png)
+
+code: [4_cherryFlower2](codes/4_cherryFlower2.py)
+![4_cherryFlower2](images/4_cherryFlower2.png)
+
+code: [4_cherryFlower3](codes/4_cherryFlower3.py)
+![4_cherryFlower3](images/4_cherryFlower3.png)
+
+code: [4_christmasTree](codes/4_christmasTree.py)
+![4_christmasTree](images/4_christmasTree.png)
+
+
+
+### 1.6 Complex Drawing
 code: [5_colorSnake](codes/5_colorSnake.py)
 ![5_colorSnake](images/5_colorSnake.png)
 
@@ -104,6 +140,9 @@ code: [5_doraemon](codes/5_doraemon.py)
 
 code: [5_doraemon2](codes/5_doraemon2.py)
 ![5_doraemon2](images/5_doraemon2.png)
+
+code: [5_doraemon3](codes/5_doraemon3.py)
+![5_doraemon3](images/5_doraemon3.png)
 
 code: [5_flower](codes/5_flower.py)
 ![5_flower](images/5_flower.png)
@@ -120,9 +159,6 @@ code: [5_littleYellowMan](codes/5_littleYellowMan.py)
 code: [5_loveHeart](codes/5_loveHeart.py)
 ![5_loveHeart](images/5_loveHeart.png)
 
-code: [5_pinkPig](codes/5_pinkPig.py)
-![5_pinkPig](images/5_pinkPig.png)
-
 code: [5_rainbow](codes/5_rainbow.py)
 ![5_rainbow](images/5_rainbow.png)
 
@@ -138,4 +174,21 @@ code: [5_starCircle](codes/5_starCircle.py)
 code: [5_turtleSunflower](codes/5_turtleSunflower.py)
 ![5_turtleSunflower](images/5_turtleSunflower.png)
 
+code: [5_patrickStar](codes/5_patrickStar.py)
+![5_patrickStar](images/5_patrickStar.png)
+
+code: [5_peppaPig](codes/5_peppaPig.py)
+![5_peppaPig](images/5_peppaPig.png)
+
+code: [5_peppaPig2](codes/5_peppaPig2.py)
+![5_peppaPig2](images/5_peppaPig2.png)
+
+code: [5_peppaPig3](codes/5_peppaPig3.py)
+![5_peppaPig3](images/5_peppaPig3.png)
+
+code: [5_pikachu](codes/5_pikachu.py)
+![5_pikachu](images/5_pikachu.png)
+
+code: [5_pikachu2](codes/5_pikachu2.py)
+![5_pikachu2](images/5_pikachu2.png)
 
