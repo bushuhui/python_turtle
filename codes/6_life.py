@@ -164,7 +164,7 @@ def display_help_window():
         y -= line_height
 
 
-def main():
+def draw():
     display_help_window()
 
     scr = turtle.Screen()
@@ -234,8 +234,8 @@ def main():
 
     # Enter the Tk main loop
     turtle.listen()
-    turtle.mainloop()
 
 
 if __name__ == '__main__':
-    main()
+    draw()
+    turtle.mainloop()

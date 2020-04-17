@@ -81,6 +81,21 @@ code: [2_moroccanMosaic2](codes/2_moroccanMosaic2.py)
 code: [2_race](codes/2_race.py)
 ![2_race](images/2_race.png)
 
+code: [2_bytedesign](codes/2_bytedesign.py)
+![2_bytedesign.py](images/2_bytedesign.png)
+
+code: [2_colorMixer](codes/2_colorMixer.py)
+![2_colorMixer.py](images/2_colorMixer.png)
+
+code: [2_paint](codes/2_paint.py)
+![2_paint.py](images/2_paint.png)
+
+code: [2_peace](codes/2_peace.py)
+![2_peace.py](images/2_peace.png)
+
+code: [2_tiltdemo](codes/2_tiltdemo.py)
+![2_tiltdemo.py](images/2_tiltdemo.png)
+
 code: [2_shellSpiral](codes/2_shellSpiral.py)
 ![2_shellSpiral](images/2_shellSpiral.png)
 
@@ -134,6 +149,15 @@ code: [4_cherryFlower3](codes/4_cherryFlower3.py)
 code: [4_christmasTree](codes/4_christmasTree.py)
 ![4_christmasTree](images/4_christmasTree.png)
 
+
+code: [4_fractalCurves](codes/4_fractalCurves.py)
+![4_fractalCurves](images/4_fractalCurves.png)
+
+code: [4_lindenmayer_indian](codes/4_lindenmayer_indian.py)
+![4_lindenmayer_indian](images/4_lindenmayer_indian.png)
+
+code: [4_penrose](codes/4_penrose.py)
+![4_penrose](images/4_penrose.png)
 
 
 ### 1.6 Complex Drawing
@@ -198,6 +222,22 @@ code: [5_pikachu2](codes/5_pikachu2.py)
 ![5_pikachu2](images/5_pikachu2.png)
 
 
+### 1.7 Game
+
+code: [6_chaos](codes/6_chaos.py)
+![6_chaos](images/6_chaos.png)
+
+code: [6_clock](codes/6_clock.py)
+![6_clock](images/6_clock.png)
+
+code: [6_hanoi](codes/6_hanoi.py)
+![6_hanoi](images/6_hanoi.png)
+
+code: [6_life](codes/6_life.py)
+![6_life](images/6_life.png)
+
+code: [6_planet_and_moon](codes/6_planet_and_moon.py)
+![6_planet_and_moon](images/6_planet_and_moon.png)
 
 
 ## [References](docs/referenes.md)
