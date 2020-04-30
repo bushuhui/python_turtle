@@ -45,10 +45,10 @@
 * Learn Python Turtle Graphics and L-Systems https://github.com/thomasmarsh/python-turtle
 * How to Think Like a Computer Scientist http://openbookproject.net/thinkcs/python/english3e/index.html
 * Intro to Programming - Python
-http://python-intro.readthedocs.io/en/latest/index.html
-
+  http://python-intro.readthedocs.io/en/latest/index.html
 * Python for Kids: A Playful Introduction To Programming
 * Python Projects for Kids
+* [The Nature of Code book](http://natureofcode.com/)
 
 
 ## Spirograph
