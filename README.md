@@ -240,5 +240,11 @@ code: [6_planet_and_moon](codes/6_planet_and_moon.py)
 ![6_planet_and_moon](images/6_planet_and_moon.png)
 
 
+## Install
+```
+sudo apt install python3-tk
+```
+
+
 ## [References](docs/referenes.md)
 [References](docs/referenes.md)
